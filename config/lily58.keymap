@@ -46,8 +46,11 @@
                 <&macro_tap>,
                 <&kp NUMBER_4>,
                 <&macro_release>,
+                <&kp LEFT_WIN>,
                 <&macro_release>,
-                <&macro_release>;
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
 
             label = "MACOS_PRINTSCREEN";
         };
