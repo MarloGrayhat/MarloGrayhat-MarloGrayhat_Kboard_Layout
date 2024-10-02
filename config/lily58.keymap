@@ -134,13 +134,23 @@
         bt_layer {
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none  &none  &none  &none  &none
-&none        &to 1         &to 0         &none         &none         &sys_reset                    &none  &none  &none  &none  &none  &none
+&none        &to 1         &to 0         &to 5         &none         &sys_reset                    &none  &none  &none  &none  &none  &none
 &sys_reset   &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none  &none
 &bootloader  &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none  &none
                                          &none         &none         &none         &none    &none  &none  &none  &none
             >;
 
             label = "BT LAYER";
+        };
+
+        game {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans     &trans       &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &kp LCTRL  &kp SPACE    &kp ENTER  &trans  &trans  &trans
+            >;
         };
     };
 };
